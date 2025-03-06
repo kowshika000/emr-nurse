@@ -9,9 +9,13 @@ const NurseTabs = () => {
   const [selectedTab, setSelectedTab] = useState("nurseSheet");
 
   return (
-    <Tabs activeKey={selectedTab} onChange={setSelectedTab} type="card">
+    <Tabs
+      activeKey={selectedTab}
+      onChange={setSelectedTab}
+      type="card"
+    >
       <TabPane tab="Nurse Sheet" key="nurseSheet">
-       <NurseModule/>
+        <NurseModule />
       </TabPane>
       <TabPane tab="Case Sheet" key="caseSheet">
         <CaseSheet />

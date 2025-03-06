@@ -9,7 +9,7 @@ const printCompilationMessage = require("./compilation.config.js");
 
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:3006/",
+    publicPath: "https://emr-nurse-child5.web.app/",
   },
 
   resolve: {
@@ -20,6 +20,11 @@ module.exports = (_, argv) => ({
     port: 3006,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, "src")],
+    hot: false, // 🔴 Disable Hot Module Replacement (HMR)
+    liveReload: false, // 🔴 Prevent WebSockets from reconnecting
+    client: {
+      webSocketURL: "auto://0.0.0.0:0/ws", // 🔴 Prevent WebSocket issues
+    },
     onListening: function (devServer) {
       const port = devServer.server.address().port;
 
@@ -78,7 +83,7 @@ module.exports = (_, argv) => ({
       remotes: {},
       exposes: {
         "./Dashboard": "./src/NurseDashboard/NurseDashboard.jsx",
-        // "./IPDetails": "./src/doctorIP/landingPage/doctorIpTabs.jsx",
+        "./Nurse": "./src/nursesheet/NurseModule.jsx",
         // "./OPDetails": "./src/doctorOP/patientDetails/patientDetails.jsx",
       },
       shared: {
