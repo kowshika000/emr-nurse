@@ -33,7 +33,7 @@ const NurseModule = () => {
   ];
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px" ,overflow:"auto",width:"100%"}}>
       <Tabs
         activeKey={activeMainTab}
         onChange={setActiveMainTab}

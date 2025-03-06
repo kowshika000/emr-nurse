@@ -29,7 +29,7 @@ const caseSheetSections = [
 
 const CaseSheet = () => {
   return (
-    <Box sx={{ p: 2, width: "98%" }}>
+    <Box sx={{ p: 2, overflow: "auto", width: "100%" }}>
       {caseSheetSections.map((section, index) => (
         <Box
           key={index}

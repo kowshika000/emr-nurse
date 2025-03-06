@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "nurse-emr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,18 +34,23 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@ant-design/icons": "^5.6.1",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.3",
-    "@mui/material": "^6.4.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^6.1.10",
+    "@mui/material": "^6.1.10",
+    "@mui/x-data-grid": "^7.23.1",
+    "@mui/x-date-pickers": "^7.23.1",
     "antd": "^5.23.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-to-print": "^3.0.4",
+    "react-toastify": "^10.0.5",
+    "react-tooltip": "^5.27.1",
     "web-vitals": "^4.2.4"
   }
 }
